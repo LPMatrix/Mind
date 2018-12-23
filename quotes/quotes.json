@@ -1,0 +1,938 @@
+data = [
+  {
+    "quote": "There are two ways of constructing a software design: One way is to make it so\nsimple that there are obviously no deficiencies and the other way is to make it\nso complicated that there are no obvious deficiencies.", 
+    "author": "C.A.R. Hoare, The 1980 ACM Turing Award Lecture"
+  }, 
+  {
+    "quote": "The computing scientist's main challenge is not to get confused by the\ncomplexities of his own making.", 
+    "author": "E. W. Dijkstra"
+  }, 
+  {
+    "quote": "The cheapest, fastest, and most reliable components are those that aren't there.", 
+    "author": "Gordon Bell"
+  }, 
+  {
+    "quote": "One of my most productive days was throwing away 1000 lines of code.", 
+    "author": "Ken Thompson"
+  }, 
+  {
+    "quote": "When in doubt, use brute force.", 
+    "author": "Ken Thompson"
+  }, 
+  {
+    "quote": "Deleted code is debugged code.", 
+    "author": "Jeff Sickel"
+  }, 
+  {
+    "quote": "Debugging is twice as hard as writing the code in the first place.  Therefore,\nif you write the code as cleverly as possible, you are, by definition, not\nsmart enough to debug it.", 
+    "author": "Brian W. Kernighan and P. J. Plauger in The Elements of Programming Style."
+  }, 
+  {
+    "quote": "The most effective debugging tool is still careful thought, coupled with\njudiciously placed print statements.", 
+    "author": "Brian W. Kernighan, in the paper Unix for Beginners (1979)"
+  }, 
+  {
+    "quote": "Controlling complexity is the essence of computer programming.", 
+    "author": "Brian Kernighan"
+  }, 
+  {
+    "quote": "Beauty is more important in computing than anywhere else in technology because\nsoftware is so complicated. Beauty is the ultimate defence against complexity.", 
+    "author": "David Gelernter"
+  }, 
+  {
+    "quote": "UNIX was not designed to stop its users from doing stupid things, as that would\nalso stop them from doing clever things.", 
+    "author": "Doug Gwyn"
+  }, 
+  {
+    "quote": "If you're willing to restrict the flexibility of your approach, you can almost\nalways do something better.", 
+    "author": "John Carmack"
+  }, 
+  {
+    "quote": "And folks, let's be honest. Sturgeon was an optimist. Way more than 90% of code\nis crap.", 
+    "author": "viro [http://www.ussg.iu.edu/hypermail/linux/kernel/0310.0/0870.html]"
+  }, 
+  {
+    "quote": "A data structure is just a stupid programming language.", 
+    "author": "R. Wm. Gosper"
+  }, 
+  {
+    "quote": "The essence of XML is this: the problem it solves is not hard, and it does not\nsolve the problem well.", 
+    "author": "Phil Wadler, POPL 2003"
+  }, 
+  {
+    "quote": "A program that produces incorrect results twice as fast is infinitely slower.", 
+    "author": "John Osterhout"
+  }, 
+  {
+    "quote": "Life is too short to run proprietary software.", 
+    "author": "Bdale Garbee"
+  }, 
+  {
+    "quote": "I had a nightmare once in which I a had convinced a friend how wonderful C++\nis. A while later he came back., and he was mad.[sic]", 
+    "author": "Robin Rosenberg [http://groups.google.com/groups?selm=1fYEA-pz-21%40gated-at.bofh.it]"
+  }, 
+  {
+    "quote": "XML is like violence: if it doesn't solve your problem, you aren't using enough\nof it.", 
+    "author": "Heard from someone working at Microsoft"
+  }, 
+  {
+    "quote": "XML is like violence. Sure, it seems like a quick and easy solution at first,\nbut then it spirals out of control into utter chaos.", 
+    "author": "Sarkos in reddit"
+  }, 
+  {
+    "quote": "Threads [and] signals [are] a platform-dependant trail of misery, despair,\nhorror and madness.", 
+    "author": "Anthony Baxter [http://mail.python.org/pipermail/python-dev/2005-July/]"
+  }, 
+  {
+    "quote": "Computers are about making life easier in much the same way that the Republican\nparty is about fiscal responsibility and a culture of life.", 
+    "author": "mister_borogove [http://www.livejournal.com/users/jwz/536902.html?thread=9506374#t9506374]"
+  }, 
+  {
+    "quote": "All software sucks, be it open-source [or] proprietary. The only question is\nwhat can be done with particular instance of suckage, and that's where having\nthe source matters.", 
+    "author": "viro [http://www.ussg.iu.edu/hypermail/linux/kernel/0404.3/1344.html]"
+  }, 
+  {
+    "quote": "Mathematicians stand on each others' shoulders and computer scientists stand\non each others' toes.", 
+    "author": "Richard Hamming"
+  }, 
+  {
+    "quote": "It's not that Perl programmers are idiots, it's that the language rewards\nidiotic behavior in a  way that no other language or tool has ever done.", 
+    "author": "Erik Naggum, comp.lang.lisp"
+  }, 
+  {
+    "quote": "Out-of-band == should be on a separate channel...", 
+    "author": "Al Viro"
+  }, 
+  {
+    "quote": "It's a curious thing about our industry: not only do we not learn from our\nmistakes, we also don't learn from our successes.", 
+    "author": "Keith Braithwaite"
+  }, 
+  {
+    "quote": "Ethernet always wins.", 
+    "author": "Andy Bechtolsheim"
+  }, 
+  {
+    "quote": "The central enemy of reliability is complexity.", 
+    "author": "Geer et al."
+  }, 
+  {
+    "quote": "Simplicity is prerequisite for reliability.", 
+    "author": "Edsger W. Dijkstra"
+  }, 
+  {
+    "quote": "Beware of \"the real world\". A speaker's apeal to it is always an invitation not\nto challenge his tacit assumptions.", 
+    "author": "Edsger W. Dijkstra"
+  }, 
+  {
+    "quote": "Unix is a junk OS designed by a committee of PhDs.", 
+    "author": "Dave Cutler"
+  }, 
+  {
+    "quote": "i've wondered whether Linux sysfs should be called syphilis", 
+    "author": "forsyth"
+  }, 
+  {
+    "quote": "A program is portable to the extent that it can be easily moved to a new\ncomputing environment with much less effort than would be required to write it\nafresh.", 
+    "author": "W. Stan Brown [http://groups.google.com/group/comp.std.c/msg/083fb09444dbbc76]"
+  }, 
+  {
+    "quote": "Programming graphics in X is like finding the square root of PI using Roman numerals.", 
+    "author": "Henry Spencer"
+  }, 
+  {
+    "quote": "Forward thinking was just the thing that made Multics what it is today.", 
+    "author": "Erik Quanstrom"
+  }, 
+  {
+    "quote": "The network is reliable\nLatency is zero\nBandwidth is infinite\nThe network is secure\nTopology doesn't change\nThere is one administrator\nTransport cost is zero\nThe network is homogeneous", 
+    "author": "Peter Deutsch"
+  }, 
+  {
+    "quote": "From: rsc@plan9.bell-labs.com (Russ Cox)\nSubject: Re: [9fans] design clairvoyance & the 9 way\nDate: Thu, 8 May 2003 04:05:31 GMT\n\n> What does tomorrow's unix look like?\n\nI'm confident that tomorrow's Unix will look like today's Unix, only cruftier.\n\nRuss", 
+    "author": null
+  }, 
+  {
+    "quote": "You want to make your way in the CS field? Simple. Calculate rough time of\namnesia (hell, 10 years is plenty, probably 10 months is plenty), go to the\ndusty archives, dig out something fun, and go for it.   It's worked for many\npeople, and it can work for you.", 
+    "author": "Ron Minnich"
+  }, 
+  {
+    "quote": "From: Alexander Viro <viro math psu edu>\nSubject: Re: ANNOUNCE: Linux Kernel ORB: kORBit\nDate: Sat, 9 Dec 2000 00:39:36 -0500 (EST)\n\n[...]\n\nYeah... \"Infinitely extendable API\" and all such. Roughly translated\nas \"we can't live without API bloat\". Frankly, judging by the GNOME\ncodebase people who designed the thing[GNOME] are culturally incompatible with\nUNIX.", 
+    "author": null
+  }, 
+  {
+    "quote": "> What's wrong with perl?\n\nIt combines all the worst aspects of C and Lisp: a billion different\nsublanguages in one monolithic executable.  It combines the power of\nC with the readability of PostScript.\n\n> To me perl is the triumph of utalitarianism.\n\nSo are cockroaches.  So is `sendmail'.", 
+    "author": "jwz [http://groups.google.com/groups?selm=33F4D777.7BF84EA3%40netscape.com]"
+  }, 
+  {
+    "quote": "From: ron minnich <rminnich@lanl.gov>\nSubject: [9fans] microkernels\n\nare they the O-O of the OS world? Always the promises ...\n\nron", 
+    "author": null
+  }, 
+  {
+    "quote": "Subject: Re: BK, deltas, snapshots and fate of -pre...\nFrom: Alexander Viro (viro@math.psu.edu)\nUrl: http://groups.google.com/group/fa.linux.kernel/msg/caede4c7fd703c4e\n\n[...]\n\nSigh... When it comes to software there are three systems of beliefs.\nOne of them:\n\n    * Thou shalt know by your heart that all software sucks.\n    * Beware of those who say that their software does not suck, for they\n      are either fools or liars.\n    * Beware of those who give you garments and do not allow to mend them,\n      for sooner or later thou shalt find what needs mending.\n    * But beware also of those who give you badly rotten garments and say\n      \"Thou shalt prefer that above everything, for thou art allowed to\n      mend it\".\n    * Thou shalt not treat software as a living being, for it is not one.\n    * Choose a license of thine liking for sofware thou writest and do not\n      blame those who choose differently for software they write.\n    * Know when to say \"It can be mended, I shalt do that\" and when to\n      say \"It is rotten beyond repair\".\n    * Choose free over non-free when it is better or when thou art willing\n      to fix what is broken.\n    * When shit happens, think how to fix it.\n\nAnother:\n\n    * All software wants to be free\n    * Thou shalt not use non-free software\n    * Thou shalt not mention non-free software\n    * Thou shalt make all thine software free\n    * Thou shalt choose free above working, even if free one is broken\n      beyond repair\n    * When shit happens, add new features\n\nand the last one:\n\n    * Our 3133t! K3wl! Software! Does Not Suck!!!\n    * Always choose our software above everything else\n    * When shit happens, we add new features\n\nIf you happen to believe in second variant, you have my condolence as\nlong as you don't force your beliefs on everybody else. If you choose\nto emulate door-to-door pests^H^H^H^Hreachers - don't expect to be\ntreated differently.", 
+    "author": null
+  }, 
+  {
+    "quote": "People do have a right to put their code under whatever license they like.\nNow, I won't use the stuff I don't have a source for unless I have\nexceptionally good reason to believe that authors of that stuff are\namong the few percents of programmers who can find their arse without\noutside help.  But that has nothing to do with licensing or any moral\nconsiderations and everything to the fact that I know what kind of crap\nmost of the software is.", 
+    "author": "Al Viro on linux-kernel"
+  }, 
+  {
+    "quote": "Linus Torvalds wrote:\n> Ehh.. Telling people \"don't do that\" simply doesn't work. Not if they can\n> do it easily anyway. Things really don't get fixed unless people have a\n> certain pain-level to induce it to get fixed.\n\nUmm... How about the following:  you hit delete on patches that introduce\nnew ioctls, I help to provide required level of pain.  Deal?", 
+    "author": "Al Viro on linux-kernel"
+  }, 
+  {
+    "quote": "James Simmons wrote:\n> Crap can work. Given enough thrust pigs will fly, but it's not necessary a\n> good idea.                                 [ Alexander Viro on linux-kernel ]\n\nWatch the attributions.\n\nWith sufficient thrust, pigs fly just fine.\nHowever, this is not necessarily a good idea.\nIt is hard to be sure where they are going to land,\nand it could be dangerous sitting under them as they fly overhead.\n        From RFC1925, R Callon, 1996.", 
+    "author": "Al Viro on linux-kernel"
+  }, 
+  {
+    "quote": "In the same world where Vomit-Making System is elegant, SGI \"designs\" are\nand NT is The Wave Of FutureTM.  Pardon me, but I'll stay in our universe\nand away from the drugs of such power.", 
+    "author": "Al Viro on linux-kernel"
+  }, 
+  {
+    "quote": "> > Or even XML. Ouch! No need to throw things at me!\n>\n> It seems they would be thrown! XML in kernel is too much. OpenOffice and\n\nThey won't be thrown.  They will be slowly driven under the nails, so that\nvictim could experience the joy equal to that of dealing with XML.", 
+    "author": "Alexander Viro on linux-kernel"
+  }, 
+  {
+    "quote": "A Professor of Computer Science gave a paper on how he uses Linux to teach his\nundergraduates about operating systems.  Someone in the audience asked why use\nLinux rather than Plan 9?' and the professor answered:Plan 9 looks like it\nwas written by experts; Linux looks like something my students could aspire to\nwrite'.", 
+    "author": null
+  }, 
+  {
+    "quote": "Ken Thompson: It is the way I think. I am a very bottom-up thinker. If you give\nme the right kind of Tinker Toys, I can imagine the building. I can sit there\nand see primitives and recognize their power to build structures a half mile\nhigh, if only I had just one more to make it functionally complete. I can see\nthose kinds of things.", 
+    "author": "The converse is true, too, I think. I can't from the building imagine the\nTinker Toys. When I see a top-down description of a system or language that has\ninfinite libraries described by layers and layers, all I just see is a morass.\nI can't get a feel for it. I can't understand how the pieces fit; I can't\nunderstand something presented to me that's very complex. Maybe I do what I do\nbecause if I built anything more complicated, I couldn't understand it. I\nreally must break it down into little pieces."
+  }, 
+  {
+    "quote": "ps. i made up the hyperstationary, but then again, it's probably a design\npattern.", 
+    "author": "forsyth"
+  }, 
+  {
+    "quote": "At first I hoped that such a technically unsound project would collapse but I\nsoon realized it was doomed to success. Almost anything in software can be\nimplemented, sold, and even used given enough determination. There is nothing a\nmere scientist can say that will stand against the flood of a hundred million\ndollars. But there is one quality that cannot be purchased in this way -and\nthat is reliability. The price of reliability is the pursuit of the utmost\nsimplicity. It is a price which the very rich find most hard to pay.", 
+    "author": "C.A.R. Hoare"
+  }, 
+  {
+    "quote": "I believe it may have been Dennis Ritchie who said (about X) \"Sometimes when\nyou fill a vacuum, it still sucks.\" X is a prime example of vacuumware, and in\nfact inspired the term.", 
+    "author": "[http://www.uta.fi/FAST/US8/PLAY/inklish.html]"
+  }, 
+  {
+    "quote": "I remarked to Dennis [Ritchie] that easily half the code I was writing in\nMultics was error recovery code. He said, \"We left all that stuff out [of\nUnix]. If there's an error, we have this routine called panic, and when it is\ncalled, the machine crashes, and you holler down the hall, 'Hey, reboot it.'\"", 
+    "author": "Tom Van Vleck [http://www.multicians.org/unix.html]"
+  }, 
+  {
+    "quote": "RMS is to Unix, like Hitler [was] to Nietzsche.", 
+    "author": "Federico Benavento"
+  }, 
+  {
+    "quote": "Unix is simple. It just takes a genius to understand its simplicity.", 
+    "author": "Dennis Ritchie"
+  }, 
+  {
+    "quote": "Most xml i've seen makes me think i'm\ndyslexic.  it also looks constipated, and two health problems in one standard\nis just too much.", 
+    "author": "Charles Forsyth"
+  }, 
+  {
+    "quote": "PHP is a minor evil perpetrated and created by incompetent amateurs, whereas\nPerl is a great and insidious evil perpetrated by skilled but perverted\nprofessionals.", 
+    "author": null
+  }, 
+  {
+    "quote": "OAuth is the best that the wrong way of doing things can provide.", 
+    "author": "Mike Stay [http://blog.360.yahoo.com/blog-TBPekxc1dLNy5DOloPfzVvFIVOWMB0li?p=1006]"
+  }, 
+  {
+    "quote": "This 'users are idiots, and are confused by functionality' mentality of Gnome\nis a disease. If you think your users are idiots, only idiots will use it.", 
+    "author": "Linus"
+  }, 
+  {
+    "quote": "{Ex-Cyber} some part of me desperately wants to believe that XML-RPC is some", 
+    "author": "kind of elaborate joke, like a cross between Discordianism and IP\n       Over Avian Carriers"
+  }, 
+  {
+    "quote": "The only places for icons is in a church, a burning church at that.", 
+    "author": "mhat"
+  }, 
+  {
+    "quote": "The key to performance is elegance, not battalions of special cases.", 
+    "author": "Jon Bentley and Doug McIlroy"
+  }, 
+  {
+    "quote": "Just because the standard provides a cliff in front of you, you are\nnot necessarily required to jump off it.", 
+    "author": "Norman Diamond"
+  }, 
+  {
+    "quote": "Are you quite sure that all those bells and whistles, all those\nwonderful facilities of your so called powerful programming languages,\nbelong to the solution set rather than the problem set?", 
+    "author": "Edsger W. Dijkstra"
+  }, 
+  {
+    "quote": "Measuring programming progress by lines of code is like measuring\naircraft building progress by weight.", 
+    "author": "Bill Gates"
+  }, 
+  {
+    "quote": "The object-oriented model makes it easy to build up programs by\naccretion.  What this often means, in practice, is that it provides a\nstructured way to write spaghetti code.", 
+    "author": "Paul Graham"
+  }, 
+  {
+    "quote": "First, solve the problem.  Then, write the code.", 
+    "author": "John Johnson"
+  }, 
+  {
+    "quote": "Most software today is very much like an Egyptian pyramid with\nmillions of bricks piled on top of each other, with no structural\nintegrity, but just done by brute force and thousands of slaves.", 
+    "author": "Alan Kay"
+  }, 
+  {
+    "quote": "Correctness is clearly the prime quality.  If a system does not do\nwhat it is supposed to do, then everything else about it matters\nlittle.", 
+    "author": "Bertrand Meyer"
+  }, 
+  {
+    "quote": "Complexity kills. It sucks the life out of developers, it makes\nproducts difficult to plan, build and test, it introduces security\nchallenges and it causes end-user and administrator frustration.", 
+    "author": "Ray Ozzie"
+  }, 
+  {
+    "quote": "If the designers of X Windows built cars, there would be no fewer than\nfive steering wheels hidden about the cockpit, none of which followed\nthe same principles - but you'd be able to shift gears with your car\nstereo.  Useful feature that.", 
+    "author": "Marcus J. Ranum, DEC"
+  }, 
+  {
+    "quote": "A language that doesn't have everything is actually easier to program\nin than some that do.", 
+    "author": "Dennis M. Ritchie"
+  }, 
+  {
+    "quote": "Mostly, when you see programmers, they aren't doing anything.  One of\nthe attractive things about programmers is that you cannot tell\nwhether or not they are working simply by looking at them.  Very often\nthey're sitting there seemingly drinking coffee and gossiping, or just\nstaring into space.  What the programmer is trying to do is get a\nhandle on all the individual and unrelated ideas that are scampering\naround in his head.", 
+    "author": "Charles M. Strauss"
+  }, 
+  {
+    "quote": "Haskell is faster than C++, more concise than Perl, more regular than\nPython, more flexible than Ruby, more typeful than C#, more robust\nthan Java, and has absolutely nothing in common with PHP.", 
+    "author": "Autrijus Tang"
+  }, 
+  {
+    "quote": "You can't trust code that you did not totally create yourself.", 
+    "author": "Ken Thompson"
+  }, 
+  {
+    "quote": "Object-oriented design is the roman numerals of computing.", 
+    "author": "Rob Pike"
+  }, 
+  {
+    "quote": "Not only is UNIX dead, it's starting to smell really bad.", 
+    "author": "Rob Pike circa 1991"
+  }, 
+  {
+    "quote": "{ajh} I always viewed HURD development like the Special Olympics of free software.", 
+    "author": null
+  }, 
+  {
+    "quote": "cat came back from Berkeley waving flags", 
+    "author": "Rob Pike"
+  }, 
+  {
+    "quote": "We have persistant(sic) objects, they're called files.", 
+    "author": "Ken Thompson"
+  }, 
+  {
+    "quote": "If you want to go somewhere, goto is the best way to get there.", 
+    "author": "ken"
+  }, 
+  {
+    "quote": "The X server has to be the biggest program I've ever seen that doesn't do anything for you.", 
+    "author": "Ken Thompson"
+  }, 
+  {
+    "quote": "A smart terminal is not a smartass terminal, but rather a terminal you can educate.", 
+    "author": "Rob Pike"
+  }, 
+  {
+    "quote": "Simplicity is the ultimate sophistication.", 
+    "author": "Leonardo da Vinci"
+  }, 
+  {
+    "quote": "Increasingly, people seem to misinterpret complexity as\nsophistication, which is baffling-the incomprehensible should cause\nsuspicion rather than admiration.  Possibly this trend results from a\nmistaken belief that using a somewhat mysterious device confers an\naura of power on the user.", 
+    "author": "Niklaus Wirth"
+  }, 
+  {
+    "quote": "Compatibility means deliberately repeating other people's mistakes.", 
+    "author": "David Wheeler"
+  }, 
+  {
+    "quote": "And both, programmers and prostitutes, are right: they suck. The big difference\nis that prostitutes got the term \"user-friendly\" right.", 
+    "author": "yiyus [http://www.reddit.com/r/programming/comments/8y348/my_programming_quotes_file_was_well_received_when/c0aspwo]"
+  }, 
+  {
+    "quote": "The Purpose of Computing is Insight, Not Numbers.", 
+    "author": "This is the motto of the book Numerical Methods for Scientists and Engineers by Richard Hamming."
+  }, 
+  {
+    "quote": "Every methodology I've come across has, at its kernel, a very small section\nlabelled \"do magic here\".", 
+    "author": "Katie [http://www.fysh.org/~katie/computing/methodologies.txt]"
+  }, 
+  {
+    "quote": "I recommend the linux people to call it \"GNU / Linux\" instead of \"GNU/Linux\".\nnever hurts to distance yourself from GNU.", 
+    "author": "mjl on #plan9-social"
+  }, 
+  {
+    "quote": "For the sinner deserves not life but death, according to the disk\ndevices.  For example, start with Plan 9, which is free of sin, the\ncase is different from His perspective.", 
+    "author": "Mark V. Shaney"
+  }, 
+  {
+    "quote": "Trying to express implicit and fuzzy relationships in ways that are explicit\nand sharp doesn't clarify the meaning, it destroys it.", 
+    "author": "Clay Shirky [http://www.shirky.com/writings/semantic_syllogism.html]"
+  }, 
+  {
+    "quote": "Unix has retarded OS research by 10 years and linux has retarded it by 20.", 
+    "author": "Dennis Ritchie as quoted by by Boyd Roberts in 9fans."
+  }, 
+  {
+    "quote": "Any program that tries to be so generalized and configurable that it could\nhandle any kind of task will either fall short of this goal, or will be\nhorribly broken.", 
+    "author": "Chris Wenham"
+  }, 
+  {
+    "quote": "Nobody who uses XML knows what they are doing.", 
+    "author": "Chris Wenham"
+  }, 
+  {
+    "quote": "Debugging time increases as a square of the program's size.", 
+    "author": "Chris Wenham"
+  }, 
+  {
+    "quote": "I guess it's like smart compiler for dumb people, and dumb compiler for smart\npeople.  But then smart compiler gets too smart.. so neither dumb nor smart\npeople can understand it.", 
+    "author": "fgb on compilers and gcc"
+  }, 
+  {
+    "quote": "linux is the f4 of computing?", 
+    "author": "erik quanstrom"
+  }, 
+  {
+    "quote": "It seems to me more like you use foresight and pessimism to avoid getting into\nsituations where you need to demonstrate exceptional programming ability.", 
+    "author": "mister_borogove speaking to jwz [http://jwz.livejournal.com/1096593.html]"
+  }, 
+  {
+    "quote": "Comparing a computer language to a human language is like comparing an\noperating system kernel to a popcorn kernel.", 
+    "author": "kryptkpr [http://www.reddit.com/r/programming/comments/9upno/c_is_frequently_reviled_both_by_those_who_never/c0eiyqu]"
+  }, 
+  {
+    "quote": "Hofstadter's Law: It always takes longer than you expect, even when you take\ninto account Hofstadter's Law.", 
+    "author": null
+  }, 
+  {
+    "quote": "My definition of an expert in any field is a person who knows enough about\nwhat's really going on to be scared.", 
+    "author": "P. J. Plauger, Computer Language, March 1983"
+  }, 
+  {
+    "quote": "Every language has an optimization operator. In C++ that operator is '//'", 
+    "author": null
+  }, 
+  {
+    "quote": "Nobody should start to undertake a large project. You start with a small\ntrivial project, and you should never expect it to get large. If you do, you'll\njust overdesign and generally think it is more important than it likely is at\nthat stage. Or worse, you might be scared away by the sheer size of the work\nyou envision. So start small, and think about the details. Don't think about\nsome big picture and fancy design. If it doesn't solve some fairly immediate\nneed, it's almost certainly over-designed. And don't expect people to jump in\nand help you. That's not how these things work. You need to get something\nhalf-way useful first, and then others will say \"hey, that almost works for\nme\", and they'll get involved in the project.", 
+    "author": "Linus Torvalds"
+  }, 
+  {
+    "quote": "Theory is when you know something, but it doesn't work. Practice is when\nsomething works, but you don't know why. Programmers combine theory and\npractice: Nothing works and they don't know why.", 
+    "author": null
+  }, 
+  {
+    "quote": "A computer is a stupid machine with the ability to do incredibly smart things,\nwhile computer programmers are smart people with the ability to do incredibly\nstupid things. They are, in short, a perfect match", 
+    "author": null
+  }, 
+  {
+    "quote": "A: Incompetent programmers. There are estimates that the number of programmers\nneeded in the U.S. exceeds 200,000. This is entirely misleading. It is not a\nquantity problem; we have a quality problem. One bad programmer can easily\ncreate two new jobs a year. Hiring more bad programmers will just increase our\nperceived need for them. If we had more good programmers, and could easily\nidentify them, we would need fewer, not more.", 
+    "author": "David Parnas"
+  }, 
+  {
+    "quote": "Well over half of the time you spend working on a project (on the order of 70\npercent) is spent thinking, and no tool, no matter how advanced, can think for\nyou. Consequently, even if a tool did everything except the thinking for you \nif it wrote 100 percent of the code, wrote 100 percent of the documentation,\ndid 100 percent of the testing, burned the CD-ROMs, put them in boxes, and\nmailed them to your customers  the best you could hope for would be a 30\npercent improvement in productivity. In order to do better than that, you have\nto change the way you think.", 
+    "author": null
+  }, 
+  {
+    "quote": "The best code is no code at all.", 
+    "author": null
+  }, 
+  {
+    "quote": "Before software can be reusable it first has to be usable.", 
+    "author": null
+  }, 
+  {
+    "quote": "Old programs read like quiet conversations between a well-spoken research worker and a well-studied mechanical colleague, not as a debate with a compiler. Who'd have guessed sophistication bought such noise?", 
+    "author": "Dick Gabriel"
+  }, 
+  {
+    "quote": "This is one of the reasons Lisp doesn't get anywhere. The trend to promote features so clever that you stop thinking about your problem and start thinking about the clever features. CL's loop is so powerful that people invented functional programming so that they'd never have to use it.", 
+    "author": "G_Morgan in reddit [http://www.reddit.com/r/programming/comments/a481l/so_to_get_back_to_the_point_go_vs_algol68_tbh_i/c0fs2nk]"
+  }, 
+  {
+    "quote": "More computing sins are committed in the name of efficiency (without\nnecessarily achieving it) than for any other single reason - including blind\nstupidity.", 
+    "author": "William A. Wulf"
+  }, 
+  {
+    "quote": "There is not now, nor has there ever been, nor will there ever be, any\nprogramming language in which it is the least bit difficult to write bad code.", 
+    "author": null
+  }, 
+  {
+    "quote": "Program testing can be a very effective way to show the presence of bugs, but\nis hopelessly inadequate for showing their absence.", 
+    "author": "Edsger W. Dijkstra"
+  }, 
+  {
+    "quote": "The competent programmer is fully aware of the limited size of his own skull.\nHe therefore approaches his task with full humility, and avoids clever tricks\nlike the plague.", 
+    "author": "Edsger W. Dijkstra"
+  }, 
+  {
+    "quote": "Parkinson's Law\nOtherwise known as the law of bureaucracy, this law states that...", 
+    "author": "\"Work expands so as to fill the time available for its completion.\""
+  }, 
+  {
+    "quote": "It has been said that the great scientific disciplines are examples of giants\nstanding on the shoulders of other giants. It has also been said that the\nsoftware industry is an example of midgets standing on the toes of other\nmidgets.", 
+    "author": "Alan Cooper, About Face"
+  }, 
+  {
+    "quote": "Code never lies, comments sometimes do.", 
+    "author": "Ron Jeffries"
+  }, 
+  {
+    "quote": "What I cannot build, I do not understand.", 
+    "author": "Richard Feynman"
+  }, 
+  {
+    "quote": "If we'd asked the customers what they wanted, they would have said \"faster horses\"", 
+    "author": "Henry Ford"
+  }, 
+  {
+    "quote": "I (...) am rarely happier than when spending an entire day programming my\ncomputer to perform automatically a task that would otherwise take me a good\nten seconds to do by hand.", 
+    "author": "Douglas Adams, Last Chance to See"
+  }, 
+  {
+    "quote": "Programming is not a zero-sum game. Teaching something to a fellow programmer\ndoesn't take it away from you. I'm happy to share what I can, because I'm in it\nfor the love of programming. The Ferraris are just gravy, honest!", 
+    "author": "John Carmack, from Michael Abrash' Graphics Programming Black Book."
+  }, 
+  {
+    "quote": "I have found that the reason a lot of people are interested in artificial\nintelligence is the same reason a lot of people are interested in artificial\nlimbs: they are missing one.", 
+    "author": "David Parnas"
+  }, 
+  {
+    "quote": "Once you've dressed and before you leave the house, look in the mirror and take\nat least one thing off.", 
+    "author": "Coco Chanel"
+  }, 
+  {
+    "quote": "When I am working on a problem I never think about beauty. I think only how to\nsolve the problem. But when I have finished, if the solution is not beautiful,\nI know it is wrong.", 
+    "author": "R. Buckminster Fuller"
+  }, 
+  {
+    "quote": "I have always found that plans are useless, but planning is indispensable.", 
+    "author": "Dwight D. Eisenhower"
+  }, 
+  {
+    "quote": "I will, in fact, claim that the difference between a bad programmer and a good\none is whether he considers his code or his data structures more important. Bad\nprogrammers worry about the code. Good programmers worry about data structures\nand their relationships.", 
+    "author": "Linus Torvalds"
+  }, 
+  {
+    "quote": "Software is like entropy. It is difficult to grasp, weighs nothing, and obeys\nthe second law of thermodynamics; i.e. it always increases.", 
+    "author": null
+  }, 
+  {
+    "quote": "A fool with a tool is a more dangerous fool.", 
+    "author": "u."
+  }, 
+  {
+    "quote": "The best things are simple, but finding these simple things is not simple.", 
+    "author": "bill [http://stackoverflow.com/questions/58640/great-programming-quotes/1003525#1003525]"
+  }, 
+  {
+    "quote": "Some problems are so complex that you have to be highly intelligent and well\ninformed just to be undecided about them.", 
+    "author": "Laurence J. Peter"
+  }, 
+  {
+    "quote": "The most amazing achievement of the computer software industry is its\ncontinuing cancellation of the steady and staggering gains made by the computer\nhardware industry.", 
+    "author": "Henry Petroski"
+  }, 
+  {
+    "quote": "Theory is when you know something, but it doesn't work. Practice is when\nsomething works, but you don't know why.  Programmers combine theory and\npractice: Nothing works and they don't know why.", 
+    "author": null
+  }, 
+  {
+    "quote": "Once a new technology starts rolling, if you're not part of the steamroller,\nyou're part of the road.", 
+    "author": "Stewart Brand"
+  }, 
+  {
+    "quote": "Einstein argued that there must be simplified explanations of nature, because\nGod is not capricious or arbitrary. No such faith comforts the software\nengineer.", 
+    "author": "Fred Brooks"
+  }, 
+  {
+    "quote": "... the cost of adding a feature isn't just the time it takes to code it. The\ncost also includes the addition of an obstacle to future expansion. ... The\ntrick is to pick the features that don't fight each other.", 
+    "author": "John Carmack"
+  }, 
+  {
+    "quote": "With diligence it is possible to make anything run slowly.", 
+    "author": "Tom Duff"
+  }, 
+  {
+    "quote": "Any intelligent fool can make things bigger, more complex, and more violent. It\ntakes a touch of genius  and a lot of courage  to move in the opposite\ndirection.", 
+    "author": "Albert Einstein"
+  }, 
+  {
+    "quote": "A foolish consistency is the hobgoblin of little minds, adored by little\nstatesmen and philosophers and divines.", 
+    "author": "Ralph Waldo Emerson"
+  }, 
+  {
+    "quote": "For a sucessful technology, honesty must take precedence over public relations\nfor nature cannot be fooled.", 
+    "author": "Richard Feynman"
+  }, 
+  {
+    "quote": "Comparing to another activity is useful if it helps you formulate questions,\nit's dangerous when you use it to justify answers.", 
+    "author": "Martin Fowler"
+  }, 
+  {
+    "quote": "Simplicity carried to the extreme becomes elegance.", 
+    "author": "Jon Franklin"
+  }, 
+  {
+    "quote": "Software obeys the law of gaseous expansion - it continues to grow until memory\nis completely filled.", 
+    "author": "Larry Gleason"
+  }, 
+  {
+    "quote": "The unavoidable price of reliability is simplicity.", 
+    "author": "C.A.R. Hoare"
+  }, 
+  {
+    "quote": "The ability to simplify means to eliminate the unnecessary so that the\nnecessary may speak.", 
+    "author": "Hans Hoffmann"
+  }, 
+  {
+    "quote": "Trying to outsmart a compiler defeats much of the purpose of using one.", 
+    "author": "Kernighan and Plauger, The Elements of Programming Style."
+  }, 
+  {
+    "quote": "You're bound to be unhappy if you optimize everything.", 
+    "author": "Donald Knuth"
+  }, 
+  {
+    "quote": "A distributed system is one in which the failure of a computer you didn't even\nknow existed can render your own computer unusable.", 
+    "author": "Leslie Lamport"
+  }, 
+  {
+    "quote": "But in our enthusiasm, we could not resist a radical overhaul of the system, in\nwhich all of its major weaknesses have been exposed, analyzed, and replaced\nwith new weaknesses.", 
+    "author": "Bruce Leverett, Register Allocation in Optimizing Compilers"
+  }, 
+  {
+    "quote": "The proper use of comments is to compensate for our failure to express ourself\nin code.", 
+    "author": "Robert C. MartinClean Code"
+  }, 
+  {
+    "quote": "If you want a product with certain characteristics, you must ensure that the\nteam has those characteristics before the product's development.", 
+    "author": "Jim McCarthy and Michele McCarthy - Software for your Head"
+  }, 
+  {
+    "quote": "You can't have great software without a great team, and most software teams\nbehave like dysfunctional families.", 
+    "author": "Jim McCarthy"
+  }, 
+  {
+    "quote": "Testing by itself does not improve software quality. Test results are an\nindicator of quality, but in and of themselves, they don't improve it. Trying\nto improve software quality by increasing the amount of testing is like trying\nto lose weight by weighing yourself more often. What you eat before you step\nonto the scale determines how much you will weigh, and the software development\ntechniques you use determine how many errors testing will find. If you want to\nlose weight, don't buy a new scale; change your diet. If you want to improve\nyour software, don't test more; develop better.", 
+    "author": "Steve McConnell Code Complete"
+  }, 
+  {
+    "quote": "Correctness is clearly the prime quality. If a system does not do what it is\nsupposed to do, then everything else about it matters little.", 
+    "author": "Bertrand Meyer"
+  }, 
+  {
+    "quote": "Incorrect documentation is often worse than no documentation.", 
+    "author": "Bertrand Meyer"
+  }, 
+  {
+    "quote": "Software sucks because users demand it to.", 
+    "author": "Nathan Myhrvold"
+  }, 
+  {
+    "quote": "Unformed people delight in the gaudy and in novelty. Cooked people delight in\nthe ordinary.", 
+    "author": "Erik Naggum"
+  }, 
+  {
+    "quote": "There's no sense being exact about something if you don't even know what you're\ntalking about.", 
+    "author": "John von Neumann"
+  }, 
+  {
+    "quote": "That's the thing about people who think they hate computers. What they really\nhate is lousy programmers.", 
+    "author": "Larry Niven and Jerry Pournelle Oath of Fealty"
+  }, 
+  {
+    "quote": "Search all the parks in all your cities; you'll find no statues of committees.", 
+    "author": "David Ogilvy"
+  }, 
+  {
+    "quote": "Good code is short, simple, and symmetrical - the challenge is figuring out how\nto get there.", 
+    "author": "Sean Parent"
+  }, 
+  {
+    "quote": "Fashion is something barbarous, for it produces innovation without reason and\nimitation without benefit.", 
+    "author": "George Santayana"
+  }, 
+  {
+    "quote": "Forgive him, for he believes that the customs of his tribe are the laws of\nnature!", 
+    "author": "G.B. Shaw"
+  }, 
+  {
+    "quote": "The only sin is to make a choice without knowing you are making one.", 
+    "author": "Jonathan Shewchuk"
+  }, 
+  {
+    "quote": "It is a painful thing to look at your own trouble and know that you yourself\nand no one else has made it.", 
+    "author": "Sophocles, Ajax"
+  }, 
+  {
+    "quote": "The primary duty of an exception handler is to get the error\nout of the lap of the programmer and into the surprised face\nof the user. Provided you keep this cardinal rule in mind,\nyou can't go far wrong.", 
+    "author": "Verity Stob"
+  }, 
+  {
+    "quote": "A notation is important for what it leaves out.", 
+    "author": "Joseph Stoy"
+  }, 
+  {
+    "quote": "An organisation that treats its programmers as morons will soon have\nprogrammers that are willing and able to act like morons only.", 
+    "author": "Bjarne Stroustrup"
+  }, 
+  {
+    "quote": "I have always wished that my computer would be as easy to use\nas my telephone. My wish has come true. I no longer know how\nto use my telephone.", 
+    "author": "Bjarne Stroustrup"
+  }, 
+  {
+    "quote": "The most important single aspect of software development is\nto be clear about what you are trying to build.", 
+    "author": "Bjarne Stroustrup"
+  }, 
+  {
+    "quote": "The best is the enemy of the good.", 
+    "author": "Voltaire"
+  }, 
+  {
+    "quote": "As soon as we started programming, we found to our surprise that it wasn't as\neasy to get programs right as we had thought. Debugging had to be discovered. I\ncan remember the exact instant when I realized that a large part of my life\nfrom then on was going to be spent in finding mistakes in my own programs.", 
+    "author": "Maurice Wilkes discovers debugging, 1949"
+  }, 
+  {
+    "quote": "Software gets slower faster than hardware gets faster.", 
+    "author": "Wirth's law"
+  }, 
+  {
+    "quote": "The purpose of software engineering is to control complexity, not to create it.", 
+    "author": "Dr. Pamela Zave"
+  }, 
+  {
+    "quote": "I object to doing things that computers can do.", 
+    "author": "Olin Shivers"
+  }, 
+  {
+    "quote": "Simplicity  the art of maximizing the amount of work not done  is essential.", 
+    "author": "From the Agile Manifesto."
+  }, 
+  {
+    "quote": "When you want to do something differently from the rest of the world, it's a\ngood idea to look into whether the rest of the world knows something you don't.", 
+    "author": null
+  }, 
+  {
+    "quote": "Perilous to us all are the devices of an art deeper than that which we possess\nourselves.", 
+    "author": "J.R.R. Tolkien"
+  }, 
+  {
+    "quote": "Complexity has nothing to do with intelligence, simplicity does.", 
+    "author": "Larry Bossidy"
+  }, 
+  {
+    "quote": "If it doesn't work, it doesn't matter how fast it doesn't work.", 
+    "author": "Mich Ravera"
+  }, 
+  {
+    "quote": "Simplicity is hard to build, easy to use, and hard to charge for. Complexity is\neasy to build, hard to use, and easy to charge for.", 
+    "author": "Chris Sacca"
+  }, 
+  {
+    "quote": "... what society overwhelmingly asks for is snake oil. Of course, the snake oil\nhas the most impressive names  otherwise you would be selling nothing  like\n\"Structured Analysis and Design\", \"Software Engineering\", \"Maturity Models\",\n\"Management Information Systems\", \"Integrated Project Support Environments\"\n\"Object Orientation\" and \"Business Process Re-engineering\" (the latter three\nbeing known as IPSE, OO and BPR, respectively).", 
+    "author": "Edsger W. Dijkstra  EWD 1175: The strengths of the academic enterprise [Today we could add 'Extreme Programming', 'Agile Software Development' and many more.]"
+  }, 
+  {
+    "quote": "They won't tell you that they don't understand it; they will happily invent\ntheir way through the gaps and obscurities.", 
+    "author": "V.A. Vyssotsky on software programmers and their views on specifications"
+  }, 
+  {
+    "quote": "In software, the most beautiful code, the most beautiful functions, and the\nmost beautiful programs are sometimes not there at all.", 
+    "author": "Jon Bentley, Beautiful Code (O'Reilly), \"The Most Beautiful Code I Never Wrote\""
+  }, 
+  {
+    "quote": "Computers make it easier to do a lot of things, but most of the things they\nmake it easier to do don't need to be done.", 
+    "author": "Andy Rooney"
+  }, 
+  {
+    "quote": "True glory consists in doing what deserves to be written; in writing what\ndeserves to be read.", 
+    "author": "Pliny the Elder"
+  }, 
+  {
+    "quote": "The whole point of getting things done is knowing what to leave undone.", 
+    "author": "Oswald Chambers"
+  }, 
+  {
+    "quote": "Q: What is the difference between an object methodologist and a terrorist?\nA: You can negotiate with the terrorist.", 
+    "author": null
+  }, 
+  {
+    "quote": "One Page Principle: A specification that will not fit on one page of 8.5x11\ninch paper cannot be understood.", 
+    "author": "Mark Ardis"
+  }, 
+  {
+    "quote": "The whole HTML validation exercise is questionable, but validating as XHTML is\nflat-out masochism. Only recommended for those that enjoy pain. Or programmers.\nI can't always tell the difference.", 
+    "author": "Jeff Atwood"
+  }, 
+  {
+    "quote": "When in doubt, leave it out.", 
+    "author": "Joshua Bloch"
+  }, 
+  {
+    "quote": "No code is faster than no code.", 
+    "author": "merb motto"
+  }, 
+  {
+    "quote": "As a rule, software systems do not work well until they have been used, and\nhave failed repeatedly, in real applications.", 
+    "author": "Dave Parnas"
+  }, 
+  {
+    "quote": "OOP is to writing a program, what going through airport security is to flying.", 
+    "author": "Richard Mansfield"
+  }, 
+  {
+    "quote": "The problem with object-oriented languages is they've got all this implicit\nenvironment that they carry around with them. You wanted a banana but what you\ngot was a gorilla holding the banana and the entire jungle.", 
+    "author": "Joe Armstrong"
+  }, 
+  {
+    "quote": "As a programmer, it is your job to put yourself out of business. What you do\ntoday can be automated tomorrow.", 
+    "author": "Doug McIlroy"
+  }, 
+  {
+    "quote": "IDE features are language smells.", 
+    "author": "Reg Braithwaite"
+  }, 
+  {
+    "quote": "PHP is [the] Sarah Palin of programming languages.", 
+    "author": "killerstorm [http://www.reddit.com/r/programming/comments/b7j9v/debian_refuses_to_package_the_embedded_php/c0ldcqg]"
+  }, 
+  {
+    "quote": "A good way to have good ideas is by being unoriginal.", 
+    "author": "Bram Cohen"
+  }, 
+  {
+    "quote": "The comment about developers making work for themselves is also spot on. I\nanswer a lot of programming questions, and the questions are always asked\nbecause the programmer has reached the end of a twisty maze of his own\ncreation. Turn around, walk, spin around, and try again. You'll find a better\nsolution.", 
+    "author": "Jonathan Rockway in a Hacker News comment"
+  }, 
+  {
+    "quote": "a program is like a poem: you cannot write a poem without writing it. Yet\npeople talk about programming as if it were a production  process and measure\n\"programmer productivity\"in terms of \"number of lines of code produced\".In so\ndoing they book that number on the wrong side of the ledger: We should always\nrefer to\"the number of lines of code spent\".", 
+    "author": "E. W. Dijkstra"
+  }, 
+  {
+    "quote": "[1]  If you are insistent enough, you might also earn a free referral\nto psychiatrist.", 
+    "author": "Al Viro in lkml"
+  }, 
+  {
+    "quote": "Well, you see, after spending years cleaning up the excrements of self-styled\n\"REAL engineers\" it's either get on the tower to point and laugh or get on the\ntower to point and shoot.", 
+    "author": "Al Viro in lkml"
+  }, 
+  {
+    "quote": "'Layered approach' is not a magic incantation to excuse any bit of snake oil.\nHomeopathic remedies might not harm (pure water is pure water), but that's not\nan excuse for quackery. And frankly, most of the 'security improvement' crowd\nsound exactly like woo-peddlers.", 
+    "author": "Al Viro"
+  }, 
+  {
+    "quote": "The trick is to fix the problem you have, rather than the problem you want.", 
+    "author": "Bram Cohen"
+  }, 
+  {
+    "quote": "Security is a state of mind.", 
+    "author": "NSA Security Manual"
+  }, 
+  {
+    "quote": "Never attribute to funny hardware that which can be adequately explained by\nbroken locking.", 
+    "author": "Erik Quanstrom"
+  }, 
+  {
+    "quote": "Things which any idiot could write usually have the quality of having been\nwritten by an idiot.", 
+    "author": "Bram Cohen"
+  }, 
+  {
+    "quote": "In programming the hard part isn't solving problems, but deciding what problems\nto solve.", 
+    "author": "Paul Graham"
+  }, 
+  {
+    "quote": "[POSIX] unifying unix? more like formalizing historical design mistakes made by\nmajor vendors...", 
+    "author": "ttyv0"
+  }, 
+  {
+    "quote": "Do I really want to be using a language where memoize is a PhD-level topic?", 
+    "author": "Mark Engelberg about Haskell"
+  }, 
+  {
+    "quote": "People stop thinking and questioning [and] then its just worshipping some rules\nwithout any pruporse.", 
+    "author": "Cinap Lenrek"
+  }, 
+  {
+    "quote": "If you start programming by learning perl you will just become a menace to your\nself and others.", 
+    "author": "egoncasteel"
+  }, 
+  {
+    "quote": "When there is no type hierarchy you don't have to manage the type hierarchy.", 
+    "author": "Rob Pike"
+  }, 
+  {
+    "quote": "Programming languages should be designed not by piling feature on top of\nfeature, but by removing the weaknesses and restrictions that make additional\nfeatures appear necessary.", 
+    "author": "RnRS"
+  }, 
+  {
+    "quote": "Software efficiency halves every 18 months, compensating Moore's Law.", 
+    "author": "May's Law"
+  }, 
+  {
+    "quote": "So-called \"smart\" software usually is the worst you can imagine.", 
+    "author": "Christian Neukirchen"
+  }, 
+  {
+    "quote": "Such is modern computing: everything simple is made too complicated because\nit's easy to fiddle with; everything complicated stays complicated because it's\nhard to fix.", 
+    "author": "Rob Pike"
+  }, 
+  {
+    "quote": "It is not that uncommon for the cost of an abstraction to outweigh the benefit\nit delivers. Kill one today!", 
+    "author": "John Carmack"
+  }, 
+  {
+    "quote": "So much complexity in software comes from trying to make one thing do two things.", 
+    "author": "Ryan Singer"
+  }, 
+  {
+    "quote": "The standard rule is, when you're in a hole, stop digging; that seems not to\napply [to] software nowadays.", 
+    "author": "Ron Minnich"
+  }, 
+  {
+    "quote": "Languages that try to disallow idiocy become themselves idiotic.", 
+    "author": "Rob Pike"
+  }, 
+  {
+    "quote": "uriel: When I read \"OMG (Object Management Group)\" I think \"Oh My God!\".\ngobongo: Fitting because whenever someone suggests I use UML I think \"Oh My God (is this guy on crack?)!\".", 
+    "author": null
+  }, 
+  {
+    "quote": "There's nothing in computing that can't be broken by another level of\nindirection.", 
+    "author": "Rob Pike"
+  }, 
+  {
+    "quote": "A complex system that works is invariably found to have evolved from a simple\nsystem that worked. The inverse proposition also appears to be true: A complex\nsystem designed from scratch never works and cannot be made to work.", 
+    "author": "John Gall"
+  }, 
+  {
+    "quote": "\"design patterns\" are concepts used by people who can't learn by any method\nexcept memorization, so in place of actual programming ability, they memorize\n\"patterns\" and throw each one in sequence at a problem until it works", 
+    "author": "Dark_Shikari"
+  }, 
+  {
+    "quote": "One of the big lessons of a big project is you don't want people that aren't\nreally programmers programming, you'll suffer for it!", 
+    "author": "John Carmack"
+  }, 
+  {
+    "quote": "Premature optimization, that's like a sneeze. Premature abstraction is like\nebola; it makes my eyes bleed.", 
+    "author": "Christer Ericson"
+  }, 
+  {
+    "quote": "Premature optimizations can be troublesome to revert, but premature\ngeneralizations are often near impossible.", 
+    "author": "Emil Persson"
+  }, 
+  {
+    "quote": "Premature optimization, that's like a fart. Premature abstraction is like\ntaking a dump on another developer's desk.", 
+    "author": "Chris Eric"
+  }, 
+  {
+    "quote": "Normal people believe that if it ain't broke, don't fix it.  Engineers believe\nthat if it ain't broke, it doesn't have enough features yet.", 
+    "author": "Scott Adams"
+  }, 
+  {
+    "quote": "If you give someone a program, you will frustrate them for a day; if you teach\nthem how to program, you will frustrate them for a lifetime.", 
+    "author": "David Leinweber (NOWS)"
+  }
+]
