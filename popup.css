@@ -53,6 +53,7 @@ img{
 	opacity: 1;
 	width: 120px;
 	transition: 0.2s opacity ease-in-out;
+	display: inline-flex;
 }
 .flex:hover{
 	opacity: 0.4;
