@@ -55,9 +55,6 @@ img{
 	transition: 0.2s opacity ease-in-out;
 	display: inline-flex;
 }
-.flex:hover{
-	opacity: 0.4;
-}
 .flex .fa{
 	font-size: 40px;
 	color: #2f5876;
