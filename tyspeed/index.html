@@ -6,40 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TySpeed</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="text-white " style="background-color: #618833">
-  <header class="text-center p-3 mb-5" style="background-color: #8BC34A">
-      <!-- Time & Score Columns -->
-      <div class="row mt-5">
-        <div class="col-md-6">
-          <h3>Time Left:
-            <span id="time">0</span>
-          </h3>
-        </div>
-        <div class="col-md-6">
-          <h3>Score:
-            <span id="score">0</span>
-          </h3>
-        </div>
+<body>
+  <div class="logo"><h1>Tyspeed</h1></div>
+      <div class="content">
+          <p>Tyspeed helps you improve your typing speed and accurracy. Type the words that appear on your screen as fast as possible before your time elaps</p>
       </div>
-  </header>
-  <div class="container-fluid text-center">
+      <div class="row">
+          <div class="col-1-of-2">
 
-    <!-- Word & Input -->
-    <div class="row">
-      <div class="col-md-6 mx-auto">
-        <p class="lead">Type The Given Word Within
-          <span class="text-primary" id="seconds">5</span> Seconds:</p>
-        <h2 class="display-2 mb-5" id="current-word">hello</h2>
-        <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input" autofocus>
-        <h4 class="mt-3" id="message"></h4>
+              <div class="list">
+                <p class="lead">Last Scores</p>
+                  <ul>
+                      <li class="item">10</li>
+                      <li class="item">30</li>
+                      <li class="item">60</li>
+                      <li class="item">10</li>
+                      <li class="item">100</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="list-u">
+              <ul>
+                  <li class="item"></li>
+                  <li class="item"></li>
+                  <li class="item"></li>
+                  <li class="item"></li>
+                  <li class="item"></li>
+              </ul>
+          </div>
+
+          <div class="col-1-of-2">
+              <a href="game.html" class="btn btn-start"><span class="white">Start</span></a>
+              <a href="#" class="btn btn-start btn btn-start-u"></a>
+          </div>
       </div>
-    </div>
-  </div>
-  <script src="js/words.js"></script>
-  <script src="js/main.js"></script>
+
+      <div class="row">
+          <div class="col-1-of-2">
+              <a href="#" class="btn btn-full"><span class="color-2">View score</span></a>
+              <a href="#" class="btn btn-full btn btn-full-u"></a>
+          </div>
+          <div class="col-1-of-2">
+              <a href="#" class="btn btn-full-2"><span class="color">Help</span></a>
+              <a href="#" class="btn btn-full-2 btn btn-full-2-u"></a>
+          </div>
+      </div>
+
 </body>
 
 </html>

@@ -35,6 +35,13 @@ body {
   padding: 0;
   box-sizing: border-box; }
 
+.mt-3{
+  margin-top: 3rem;
+}
+.lead{
+  font-size: 15px;
+  color: #FFF;
+}
 .heading-primary {
   font-size: 7.8rem;
   width: 100%;
@@ -218,7 +225,9 @@ body {
   width: 69.2rem;
   height: 5.2rem;
   border-radius: 1.2rem;
-  border: none; }
+  border: none;
+  font-size: 21px;
+    text-indent: 25px; }
   .input input::placeholder {
     text-align: center;
     font-size: 2rem;

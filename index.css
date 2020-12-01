@@ -49,12 +49,6 @@ img{
 	justify-content: space-between;
 	padding: 10px 22px
 }
-.flex{
-	opacity: 1;
-	width: 120px;
-	transition: 0.2s opacity ease-in-out;
-	display: inline-flex;
-}
 .flex .fa{
 	font-size: 40px;
 	color: #2f5876;
@@ -62,4 +56,12 @@ img{
 a img{
 	height: 50px;
 	width: 50px;
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	/*justify-content: center;*/
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
 }
